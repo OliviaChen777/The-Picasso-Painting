@@ -1,0 +1,90 @@
+body{
+    background-color: skyblue;
+    width: 80%;
+    max-width: 600px;
+    min-width: 300px;
+}
+.sun{
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    background-color:orange;
+    border-radius: 50%;
+    margin: 50px;
+    top:30px;
+    z-index: 3;
+}
+.tree{
+    position:absolute;
+    height:0;
+    width:0;
+    left: 400px;
+    bottom: 418px;
+    border-left:200px solid transparent;
+    border-right:200px solid transparent;
+    border-bottom: 500px solid green;
+    z-index: 2;
+}
+.lighttree{
+    position: absolute;
+    height:0;
+    width:0;
+    left: 700px;
+    bottom: 418px;
+    /* careate triangle*/
+    border-left:150px solid transparent; 
+    border-right:150px solid transparent;
+    border-bottom: 300px solid greenyellow;
+    z-index: 3;
+}
+.allsky{
+     /* using grid repeat 3 times */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 20px;
+    max-width: 80vw;
+    margin:0 auto;
+   }
+.sky{
+   position: relative;
+    height: 110px;
+    width: 300px;
+    left:20px;
+    background-color: rgb(37, 155, 202);
+   
+}
+.grass{
+    position: absolute;
+    height: 30px;
+    width:950px;
+    background-color: darkseagreen;
+    bottom:370px;
+    left:43px;
+
+   
+}
+.background{
+    position:relative;
+    height: 600px;
+    width: 950px;
+    background-color: rgb(37, 155, 202);
+    left:37px;
+    z-index: 1;
+  
+}
+ /* form part */
+section{
+    position:absolute;
+    bottom: 50px;
+    margin: 30px;
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+
+   
+
+
